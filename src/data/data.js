@@ -71,41 +71,42 @@ export const projects = [
     featured: false,
   },
 
-  {
-    id: 3,
-    title: "BBHH Media",
-    category: "Branding",
-    description:
-      "A modern visual identity created for a technology-driven media and creative company.",
+  
+{
+  id: 3,
+  title: "Trulink Social Media Design",
+  category: "Branding",
+  description:
+    "A creative social media design project developed to strengthen Trulink's online presence and communicate its brand message through engaging visuals.",
 
-    image: "/images/projects/portfolio.jpg",
+  image: "/images/projects/trulink.jpg",
 
-    technologies: ["Photoshop", "Illustrator", "Brand Identity"],
+  technologies: ["Photoshop", "Illustrator", "Brand Strategy"],
 
-    liveUrl: "#",
-    behanceUrl: "#",
+  liveUrl: "https://www.behance.net/gallery/249848287/Social-Media-Design",
+  behanceUrl: "https://www.behance.net/gallery/249848287/Social-Media-Design",
 
-    problem:
-      "The brand needed a visual identity that could communicate creativity, technology, professionalism, and a premium feel without becoming visually complicated.",
+  problem:
+    "Trulink needed visually appealing social media graphics that could capture attention, maintain brand consistency, and communicate its message effectively across digital platforms.",
 
-    solution:
-      "I developed a clean identity system built around a strong visual mark, carefully selected colors, typography, and supporting brand elements.",
+  solution:
+    "I created a cohesive set of social media designs using strategic layouts, engaging typography, balanced colors, and clear visual hierarchy to reflect the brand's identity and connect with its audience.",
 
-    features: [
-      "Primary logo",
-      "Secondary logo",
-      "Brand mark",
-      "Color system",
-      "Typography",
-      "Black and white variations",
-      "Brand presentation",
-    ],
+  features: [
+    "Social Media Graphics",
+    "Promotional Designs",
+    "Brand-Aligned Visuals",
+    "Typography and Layout Design",
+    "Consistent Visual Identity",
+    "Digital Marketing Creatives",
+    "Platform-Ready Designs",
+  ],
 
-    outcome:
-      "The identity gives BBHH Media a modern and flexible visual system that can work across digital platforms and marketing materials.",
+  outcome:
+    "The designs provide Trulink with a consistent and professional visual presence, helping its content stand out and communicate more effectively across social media platforms.",
 
-    featured: false,
-  },
+  featured: false,
+},
 
   {
     id: 4,
@@ -143,77 +144,79 @@ export const projects = [
     featured: false,
   },
 
+  // {
+  //   id: 5,
+  //   title: "Book Landing Page",
+  //   category: "Websites",
+  //   description:
+  //     "A focused landing page designed to introduce a book, communicate its message, and guide visitors toward purchase.",
+
+  //   image: "/images/projects/portfolio.jpg",
+
+  //   technologies: ["React", "Tailwind CSS", "Responsive Design"],
+
+  //   liveUrl: "#",
+  //   githubUrl: "#",
+
+  //   problem:
+  //     "The book needed a focused digital presentation that could communicate its message quickly while guiding interested readers toward purchasing it.",
+
+  //   solution:
+  //     "I designed a conversion-focused landing page with strong typography, book information, author presentation, supporting content, and clear calls to action.",
+
+  //   features: [
+  //     "Book presentation",
+  //     "Author section",
+  //     "Responsive design",
+  //     "Call-to-action sections",
+  //     "Purchase links",
+  //     "Mobile optimization",
+  //   ],
+
+  //   outcome:
+  //     "The page provides readers with the information they need while keeping the purchasing journey simple and direct.",
+
+  //   featured: false,
+  // },
+
+  
+{
+  id: 5,
+  title: "Nuurul Hidaayah Promotional Design",
+  category: "Branding",
+  description:
+    "A promotional design created for Nuurul Hidaayah Islamic Academy to showcase its educational programmes and communicate its mission through clear, engaging visuals.",
+
+  image: "/images/projects/nuurul-hidaayah.jpg",
+
+  technologies: ["Photoshop", "Canva", "Visual Communication"],
+
+  liveUrl: "#",
+  behanceUrl: "#",
+
+  problem:
+    "The academy needed a professional promotional design that could highlight its Islamic educational programmes, attract prospective students, and present essential information in an appealing format.",
+
+  solution:
+    "I designed a visually engaging promotional graphic using a balanced layout, readable typography, complementary colors, and clear information hierarchy to reflect the academy's identity and educational values.",
+
+  features: [
+    "Promotional Flyer Design",
+    "Islamic Education Messaging",
+    "Course Information Presentation",
+    "Brand-Aligned Visuals",
+    "Typography and Layout",
+    "Contact Information Integration",
+    "Social Media-Ready Format",
+  ],
+
+  outcome:
+    "The final design gives Nuurul Hidaayah Islamic Academy a professional promotional asset for showcasing its programmes, reaching prospective students, and strengthening its visual presence across digital platforms.",
+
+  featured: false,
+},
   {
-    id: 5,
-    title: "Book Landing Page",
-    category: "Websites",
-    description:
-      "A focused landing page designed to introduce a book, communicate its message, and guide visitors toward purchase.",
-
-    image: "/images/projects/portfolio.jpg",
-
-    technologies: ["React", "Tailwind CSS", "Responsive Design"],
-
-    liveUrl: "#",
-    githubUrl: "#",
-
-    problem:
-      "The book needed a focused digital presentation that could communicate its message quickly while guiding interested readers toward purchasing it.",
-
-    solution:
-      "I designed a conversion-focused landing page with strong typography, book information, author presentation, supporting content, and clear calls to action.",
-
-    features: [
-      "Book presentation",
-      "Author section",
-      "Responsive design",
-      "Call-to-action sections",
-      "Purchase links",
-      "Mobile optimization",
-    ],
-
-    outcome:
-      "The page provides readers with the information they need while keeping the purchasing journey simple and direct.",
-
-    featured: false,
-  },
-
-  {
-    id: 6,
-    title: "Brand Identity Project",
-    category: "Branding",
-    description:
-      "A complete brand identity developed to create a consistent and professional visual presence.",
-
-    image: "/images/projects/portfolio.jpg",
-
-    technologies: ["Photoshop", "Illustrator", "Brand Strategy"],
-
-    liveUrl: "#",
-    behanceUrl: "#",
-
-    problem:
-      "The business needed a stronger visual identity that could be used consistently across its digital and physical touchpoints.",
-
-    solution:
-      "I developed a cohesive identity system covering the logo, colors, typography, and supporting visual elements.",
-
-    features: [
-      "Logo design",
-      "Color palette",
-      "Typography",
-      "Brand guidelines",
-      "Social media identity",
-      "Marketing assets",
-    ],
-
-    outcome:
-      "The finished identity provides a consistent visual foundation for future brand communication.",
-
-    featured: false,
-  },
-  {
-  id: 7,
+  id: 6,
   title: "Car Rental Website",
   category: "Websites",
   description:
@@ -248,7 +251,7 @@ export const projects = [
 },
 
 {
-  id: 8,
+  id: 7,
   title: "News Web",
   category: "Websites",
   description:
@@ -283,7 +286,7 @@ export const projects = [
 },
 
 {
-  id: 9,
+  id: 8,
   title: "Admin Dashboard",
   category: "Web Apps",
   description:
@@ -294,7 +297,7 @@ export const projects = [
   technologies: ["React", "JavaScript", "Tailwind CSS", "React Router"],
 
   liveUrl: "#",
-  githubUrl: "#",
+  githubUrl: "https://github.com/RAY-DEV65/Nuurul-Hidaayah",
 
   problem:
     "The business needed a centralized system for managing information, monitoring activities, and accessing important data without relying on multiple disconnected interfaces.",
@@ -315,6 +318,76 @@ export const projects = [
     "The dashboard provides a centralized and organized environment for managing business data, monitoring key information, and performing administrative tasks efficiently.",
 
   featured: true,
+},
+
+{
+  id: 9,
+  title: "Jinja Design",
+  category: "Branding",
+  description:
+    "A creative design project developed for Jinja, combining visual appeal, thoughtful composition, and clear communication to create an engaging brand presentation.",
+
+  image: "/images/projects/jinja.jpg",
+
+  technologies: ["Photoshop", "Illustrator", "Visual Design"],
+
+  liveUrl: "#",
+  behanceUrl: "#",
+
+  problem:
+    "The project required a visually appealing design that could communicate its message clearly, capture the audience's attention, and maintain a professional appearance.",
+
+  solution:
+    "I developed a distinctive visual composition using carefully selected colors, typography, imagery, and layout techniques to create a balanced and engaging design.",
+
+  features: [
+    "Creative Visual Composition",
+    "Typography and Layout",
+    "Color Coordination",
+    "Visual Hierarchy",
+    "Brand-Aligned Graphics",
+    "Digital-Ready Design",
+  ],
+
+  outcome:
+    "The final design delivers a polished visual presentation that communicates the intended message effectively and creates a memorable impression on its audience.",
+
+  featured: false,
+},
+
+{
+  id: 10,
+  title: "My Design Portfolio",
+  category: "Branding",
+  description:
+    "A visually compelling campaign design created to capture attention, communicate a clear message, and deliver a polished visual experience.",
+
+  image: "/images/projects/board.jpg",
+
+  technologies: ["Photoshop", "Illustrator", "Visual Communication"],
+
+  liveUrl: "https://www.behance.net/gallery/256886955/My-Portfolio",
+  behanceUrl: "https://www.behance.net/gallery/256886955/My-Portfolio",
+
+  problem:
+    "The project needed a distinctive visual approach that could stand out in a crowded digital space while presenting its message in a clear and memorable way.",
+
+  solution:
+    "I combined bold typography, carefully composed imagery, complementary colors, and a strong visual hierarchy to create an engaging and professional design.",
+
+  features: [
+    "Creative Art Direction",
+    "Bold Typography",
+    "Color Composition",
+    "Visual Storytelling",
+    "Promotional Graphics",
+    "Digital Presentation",
+  ],
+
+  outcome:
+    "The finished design delivers a strong visual message and demonstrates my ability to combine creativity, composition, and communication in a professional design project.",
+
+  featured: false,
 },
   
 ];

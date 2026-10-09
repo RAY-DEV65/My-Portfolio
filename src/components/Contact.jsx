@@ -36,12 +36,7 @@ const Contact = () => {
      DROPDOWN OPTIONS
   ========================================== */
 
-  const projectTypes = [
-    "Website",
-    "Web Application",
-    "Brand Design",
-    "Other",
-  ];
+  const projectTypes = ["Website", "Web Application", "Brand Design", "Other"];
 
   const budgets = [
     "Under $250",
@@ -107,10 +102,7 @@ const Contact = () => {
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener(
-        "mousedown",
-        handleClickOutside
-      );
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -151,22 +143,21 @@ const Contact = () => {
     formData.set("project_type", projectType);
     formData.set("budget", budget);
 
-    formData.set(
-      "access_key",
-      "239a8574-b933-4829-b0ac-6123c4f4d7d7"
-    );
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
-    formData.set(
-      "from_name",
-      "Rokeeb Portfolio Contact Form"
-    );
+    if (!accessKey) {
+      throw new Error("Web3Forms access key is missing.");
+    }
+
+    formData.set("access_key", accessKey);
+
+    formData.set("from_name", "Rokeeb Portfolio Contact Form");
 
     /*
       I use the visitor's subject as the email subject.
     */
 
-    const visitorSubject =
-      formData.get("subject") || "New Project Inquiry";
+    const visitorSubject = formData.get("subject") || "New Project Inquiry";
 
     formData.set("subject", visitorSubject);
 
@@ -176,7 +167,6 @@ const Contact = () => {
 
     formData.set("botcheck", "");
 
-
     const controller = new AbortController();
 
     requestTimerRef.current = setTimeout(() => {
@@ -184,26 +174,21 @@ const Contact = () => {
     }, 5000);
 
     try {
-      const response = await fetch(
-        "https://api.web3forms.com/submit",
-        {
-          method: "POST",
-          body: formData,
-          signal: controller.signal,
-        }
-      );
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+        signal: controller.signal,
+      });
 
       const data = await response.json();
 
       if (!response.ok || !data.success) {
-        throw new Error(
-          data.message || "Something went wrong"
-        );
+        throw new Error(data.message || "Something went wrong");
       }
 
       showToast(
         "success",
-        "Message sent successfully! I'll get back to you as soon as possible."
+        "Message sent successfully! I'll get back to you as soon as possible.",
       );
 
       formRef.current.reset();
@@ -216,12 +201,12 @@ const Contact = () => {
       if (error.name === "AbortError") {
         showToast(
           "error",
-          "The request took too long. Please check your connection and try again."
+          "The request took too long. Please check your connection and try again.",
         );
       } else {
         showToast(
           "error",
-          "Something went wrong. Please try again or contact me directly."
+          "Something went wrong. Please try again or contact me directly.",
         );
       }
     } finally {
@@ -296,9 +281,7 @@ const Contact = () => {
 
           <div className="flex-1">
             <p className="text-sm font-semibold text-slate-900 dark:text-white">
-              {toast.type === "success"
-                ? "Message Sent"
-                : "Submission Failed"}
+              {toast.type === "success" ? "Message Sent" : "Submission Failed"}
             </p>
 
             <p className="mt-1 text-xs leading-5 text-slate-500 dark:text-slate-400">
@@ -321,9 +304,7 @@ const Contact = () => {
 
           <div
             className={`absolute bottom-0 left-0 h-0.5 rounded-full ${
-              toast.type === "success"
-                ? "bg-emerald-500"
-                : "bg-red-500"
+              toast.type === "success" ? "bg-emerald-500" : "bg-red-500"
             }`}
             style={{
               width: "100%",
@@ -366,8 +347,8 @@ const Contact = () => {
           </h2>
 
           <p className="mt-5 text-base leading-7 text-slate-600 dark:text-slate-400 sm:text-lg">
-            Have a project in mind? Tell me about it and let's
-            turn your idea into something meaningful.
+            Have a project in mind? Tell me about it and let's turn your idea
+            into something meaningful.
           </p>
         </div>
 
@@ -392,9 +373,9 @@ const Contact = () => {
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-slate-600 dark:text-slate-400">
-                  Whether you have a new project, need help
-                  improving an existing one, or simply want to
-                  discuss an idea, I'd love to hear from you.
+                  Whether you have a new project, need help improving an
+                  existing one, or simply want to discuss an idea, I'd love to
+                  hear from you.
                 </p>
               </div>
 
@@ -478,8 +459,8 @@ const Contact = () => {
                 </div>
 
                 <p className="mt-2 text-xs leading-5 text-slate-500 dark:text-slate-500">
-                  Currently accepting selected freelance and
-                  collaboration opportunities.
+                  Currently accepting selected freelance and collaboration
+                  opportunities.
                 </p>
               </div>
             </div>
@@ -542,10 +523,7 @@ const Contact = () => {
               <div className="grid gap-5 sm:grid-cols-2">
                 {/* PROJECT TYPE */}
 
-                <div
-                  className="relative"
-                  data-custom-select
-                >
+                <div className="relative" data-custom-select>
                   <label
                     htmlFor="project_type"
                     className="mb-2 block text-sm font-semibold text-slate-700 dark:text-slate-300"
@@ -562,9 +540,7 @@ const Contact = () => {
                   <button
                     type="button"
                     onClick={() => {
-                      setProjectTypeOpen(
-                        !projectTypeOpen
-                      );
+                      setProjectTypeOpen(!projectTypeOpen);
                       setBudgetOpen(false);
                     }}
                     className={`flex w-full items-center justify-between rounded-xl border px-4 py-3.5 text-left text-sm outline-none transition-all duration-300 ${
@@ -577,9 +553,7 @@ const Contact = () => {
                         : ""
                     }`}
                   >
-                    <span>
-                      {projectType || "Select a service"}
-                    </span>
+                    <span>{projectType || "Select a service"}</span>
 
                     <FiChevronDown
                       size={17}
@@ -597,9 +571,7 @@ const Contact = () => {
                         <button
                           key={type}
                           type="button"
-                          onClick={() =>
-                            selectProjectType(type)
-                          }
+                          onClick={() => selectProjectType(type)}
                           className={`flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-sm transition-all duration-200 ${
                             projectType === type
                               ? "bg-blue-500/10 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
@@ -609,10 +581,7 @@ const Contact = () => {
                           <span>{type}</span>
 
                           {projectType === type && (
-                            <FiCheck
-                              size={16}
-                              className="text-blue-500"
-                            />
+                            <FiCheck size={16} className="text-blue-500" />
                           )}
                         </button>
                       ))}
@@ -622,10 +591,7 @@ const Contact = () => {
 
                 {/* BUDGET */}
 
-                <div
-                  className="relative"
-                  data-custom-select
-                >
+                <div className="relative" data-custom-select>
                   <label
                     htmlFor="budget"
                     className="mb-2 block text-sm font-semibold text-slate-700 dark:text-slate-300"
@@ -633,11 +599,7 @@ const Contact = () => {
                     Budget
                   </label>
 
-                  <input
-                    type="hidden"
-                    name="budget"
-                    value={budget}
-                  />
+                  <input type="hidden" name="budget" value={budget} />
 
                   <button
                     type="button"
@@ -655,9 +617,7 @@ const Contact = () => {
                         : ""
                     }`}
                   >
-                    <span>
-                      {budget || "Select budget"}
-                    </span>
+                    <span>{budget || "Select budget"}</span>
 
                     <FiChevronDown
                       size={17}
@@ -675,9 +635,7 @@ const Contact = () => {
                         <button
                           key={amount}
                           type="button"
-                          onClick={() =>
-                            selectBudget(amount)
-                          }
+                          onClick={() => selectBudget(amount)}
                           className={`flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-sm transition-all duration-200 ${
                             budget === amount
                               ? "bg-blue-500/10 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
@@ -687,10 +645,7 @@ const Contact = () => {
                           <span>{amount}</span>
 
                           {budget === amount && (
-                            <FiCheck
-                              size={16}
-                              className="text-blue-500"
-                            />
+                            <FiCheck size={16} className="text-blue-500" />
                           )}
                         </button>
                       ))}
@@ -743,25 +698,17 @@ const Contact = () => {
 
               <button
                 type="submit"
-                disabled={
-                  isSending ||
-                  !projectType ||
-                  !budget
-                }
+                disabled={isSending || !projectType || !budget}
                 className="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-[#004d93] px-6 py-4 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(0,77,147,0.2)] transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-[0_15px_35px_rgba(0,77,147,0.3)] disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
               >
                 {isSending ? (
                   <>
-                    <FiLoader
-                      size={18}
-                      className="animate-spin"
-                    />
+                    <FiLoader size={18} className="animate-spin" />
                     Sending Message...
                   </>
                 ) : (
                   <>
                     Send Project Inquiry
-
                     <FiSend
                       size={17}
                       className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
@@ -771,8 +718,7 @@ const Contact = () => {
               </button>
 
               <p className="text-center text-xs text-slate-400 dark:text-slate-600">
-                Your information will only be used to respond to
-                your inquiry.
+                Your information will only be used to respond to your inquiry.
               </p>
             </form>
           </div>
