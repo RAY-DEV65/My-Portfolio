@@ -37,10 +37,9 @@ const Contact = () => {
   ========================================== */
 
   const projectTypes = [
-    "Business Website",
+    "Website",
     "Web Application",
     "Brand Design",
-    "React Development",
     "Other",
   ];
 
@@ -163,7 +162,7 @@ const Contact = () => {
     );
 
     /*
-      We use the visitor's subject as the email subject.
+      I use the visitor's subject as the email subject.
     */
 
     const visitorSubject =
@@ -177,9 +176,6 @@ const Contact = () => {
 
     formData.set("botcheck", "");
 
-    /*
-      5 SECOND TIMEOUT
-    */
 
     const controller = new AbortController();
 
@@ -408,7 +404,7 @@ const Contact = () => {
                 {/* EMAIL */}
 
                 <a
-                  href="mailto:your@email.com"
+                  href="mailto:yusuffayobami02@gmail.com"
                   className="group flex items-center gap-4"
                 >
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 text-blue-500 transition-all duration-300 group-hover:bg-[#004d93] group-hover:text-white">
@@ -421,7 +417,7 @@ const Contact = () => {
                     </p>
 
                     <p className="mt-1 text-sm font-medium text-slate-700 transition-colors group-hover:text-[#004d93] dark:text-slate-300 dark:group-hover:text-blue-400">
-                      your@email.com
+                      yusuffayobami02@gmail.com
                     </p>
                   </div>
                 </a>
@@ -429,7 +425,7 @@ const Contact = () => {
                 {/* PHONE */}
 
                 <a
-                  href="tel:+2340000000000"
+                  href="tel:+2348134413540"
                   className="group flex items-center gap-4"
                 >
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-500 transition-all duration-300 group-hover:bg-[#004d93] group-hover:text-white">
@@ -442,7 +438,7 @@ const Contact = () => {
                     </p>
 
                     <p className="mt-1 text-sm font-medium text-slate-700 transition-colors group-hover:text-[#004d93] dark:text-slate-300 dark:group-hover:text-blue-400">
-                      +234 000 000 0000
+                      +234 813 441 3540
                     </p>
                   </div>
                 </a>

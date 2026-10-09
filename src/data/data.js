@@ -1,17 +1,17 @@
 export const projects = [
   {
     id: 1,
-    title: "Nuurul Hidaayah Islamic Academy",
+    title: "Educational Website",
     category: "Websites",
     description:
       "A modern website designed to give an Islamic academy a professional online presence and make its educational programs easier to discover.",
 
-    image: "/images/projects/portfolio.jpg",
+    image: "/images/projects/nuurul.jpg",
 
-    technologies: ["React", "JavaScript", "CSS", "Responsive Design"],
+    technologies: ["React", "React Router", "CSS", "Responsive Design", "Email Js"],
 
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/RAY-DEV65/Nuurul-Hidaayah",
 
     problem:
       "The academy needed a professional online presence where prospective students and parents could easily understand its programs, courses, activities, and contact information.",
@@ -37,17 +37,17 @@ export const projects = [
 
   {
     id: 2,
-    title: "Ui'26 APW Quiz",
+    title: "Ui'26 Quiz-App",
     category: "Web Apps",
     description:
       "An interactive timed quiz application with automatic submission, scoring, and certificate generation.",
 
-    image: "/images/projects/portfolio.jpg",
+    image: "/images/projects/ui-quiz.jpg",
 
-    technologies: ["React", "Vite", "JavaScript", "CSS"],
+    technologies: ["React", "jsPDF", "JavaScript", "CSS"],
 
-    liveUrl: "https://quiz-rho-eosin-79.vercel.app/",
-    githubUrl: "#",
+    liveUrl: "https://ui26-apw.vercel.app",
+    githubUrl: "https://github.com/RAY-DEV65/Quiz",
 
     problem:
       "The quiz needed to provide a smooth examination experience while managing time, questions, scoring, and completion without requiring manual calculations.",
@@ -114,12 +114,12 @@ export const projects = [
     description:
       "A personal portfolio combining web development, graphic design, branding, and creative work.",
 
-    image: "/images/projects/Personal.jpg",
+    image: "/images/projects/personal.jpg",
 
-    technologies: ["React", "Tailwind CSS", "Vite", "JavaScript", "Responsive Design"],
+    technologies: ["React", "Tailwind CSS",  "JavaScript", "Responsive Design", "Email Js"],
 
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/RAY-DEV65/My-Portfolio",
 
     problem:
       "The challenge was to present development and design skills in one portfolio without making the website feel crowded or disconnected.",
@@ -213,38 +213,108 @@ export const projects = [
     featured: false,
   },
   {
-    id: 7,
-    title: "Brand Identity Project",
-    category: "Branding",
-    description:
-      "A complete brand identity developed to create a consistent and professional visual presence.",
+  id: 7,
+  title: "Car Rental Website",
+  category: "Websites",
+  description:
+    "A modern car rental website designed to help customers explore available vehicles, view rental details, and make booking decisions with ease.",
 
-    image: "/images/projects/portfolio.jpg",
+  image: "/images/projects/car-rent.jpg",
 
-    technologies: ["Photoshop", "Illustrator", "Brand Strategy"],
+  technologies: ["React", "JavaScript", "Tailwind CSS", "Responsive Design", "Email Js"],
 
-    liveUrl: "#",
-    behanceUrl: "#",
+  liveUrl: "#",
+  githubUrl: "https://github.com/RAY-DEV65/Car-Rent-App",
 
-    problem:
-      "The business needed a stronger visual identity that could be used consistently across its digital and physical touchpoints.",
+  problem:
+    "The rental business needed a modern online platform where customers could easily browse vehicles, compare options, and access important rental information.",
 
-    solution:
-      "I developed a cohesive identity system covering the logo, colors, typography, and supporting visual elements.",
+  solution:
+    "I developed a responsive car rental platform with a clean interface, vehicle listings, detailed car information, intuitive navigation, and a user-friendly booking experience.",
 
-    features: [
-      "Logo design",
-      "Color palette",
-      "Typography",
-      "Brand guidelines",
-      "Social media identity",
-      "Marketing assets",
-    ],
+  features: [
+    "Vehicle listings",
+    "Car details",
+    "Rental information",
+    "Booking interface",
+    "Responsive design",
+    "Interactive navigation",
+  ],
 
-    outcome:
-      "The finished identity provides a consistent visual foundation for future brand communication.",
+  outcome:
+    "The website provides a professional digital experience that makes it easier for customers to discover available vehicles and take the next step toward renting a car.",
 
-    featured: false,
-  },
+  featured: true,
+},
+
+{
+  id: 8,
+  title: "News Web",
+  category: "Websites",
+  description:
+    "A modern news platform built to present breaking stories, featured articles, and categorized news content through a clean and engaging interface.",
+
+  image: "/images/projects/news.jpg",
+
+  technologies: ["React", "JavaScript", "Boostrap", "REST API"],
+
+  liveUrl: "#",
+  githubUrl: "https://github.com/RAY-DEV65/News-Web",
+
+  problem:
+    "Readers needed a simple and organized platform where they could quickly discover current stories, browse different categories, and read articles without a cluttered interface.",
+
+  solution:
+    "I developed a responsive news platform with categorized articles, featured stories, search functionality, reusable content components, and a layout optimized for easy reading across devices.",
+
+  features: [
+    "Featured news",
+    "News categories",
+    "Article pages",
+    "Search functionality",
+    "Responsive layout",
+    "Dynamic content",
+  ],
+
+  outcome:
+    "The platform delivers a clean and engaging reading experience while providing an organized structure for presenting news and articles across different categories.",
+
+  featured: true,
+},
+
+{
+  id: 9,
+  title: "Admin Dashboard",
+  category: "Web Apps",
+  description:
+    "A modern and responsive admin dashboard designed to help administrators manage data, monitor activity, and interact with key business operations from a centralized interface.",
+
+  image: "/images/projects/dashboard.jpg",
+
+  technologies: ["React", "JavaScript", "Tailwind CSS", "React Router"],
+
+  liveUrl: "#",
+  githubUrl: "#",
+
+  problem:
+    "The business needed a centralized system for managing information, monitoring activities, and accessing important data without relying on multiple disconnected interfaces.",
+
+  solution:
+    "I developed a responsive admin dashboard with a structured navigation system, data management interfaces, statistics, search and filtering tools, and reusable components for efficient administration.",
+
+  features: [
+    "Dashboard overview",
+    "Data management",
+    "Search and filtering",
+    "Statistics and analytics",
+    "Responsive sidebar",
+    "User-friendly interface",
+  ],
+
+  outcome:
+    "The dashboard provides a centralized and organized environment for managing business data, monitoring key information, and performing administrative tasks efficiently.",
+
+  featured: true,
+},
   
 ];

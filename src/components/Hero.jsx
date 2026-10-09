@@ -16,7 +16,7 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: FiGithub,
-    href: "https://github.com/",
+    href: "https://github.com/RAY-DEV65",
     color: "hover:bg-[#181717]",
     textColor: "group-hover:text-white",
     tooltip: "bg-[#181717]",
@@ -24,7 +24,7 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: FiLinkedin,
-    href: "https://linkedin.com/",
+    href: "https://linkedin.com/in/rokeeb-a-yusuff-80130a367/",
     color: "hover:bg-[#0A66C2]",
     textColor: "group-hover:text-white",
     tooltip: "bg-[#0A66C2]",
@@ -39,7 +39,7 @@ const socialLinks = [
         𝕏
       </span>
     ),
-    href: "https://x.com/",
+    href: "https://x.com/ray_dtechguy",
     color: "hover:bg-black",
     textColor: "group-hover:text-white",
     tooltip: "bg-black",
@@ -54,7 +54,7 @@ const socialLinks = [
         f
       </span>
     ),
-    href: "https://facebook.com/",
+    href: "https://facebook.com/profile.php?id=61586563433791",
     color: "hover:bg-[#1877F2]",
     textColor: "group-hover:text-white",
     tooltip: "bg-[#1877F2]",
@@ -62,7 +62,7 @@ const socialLinks = [
   {
     name: "Instagram",
     icon: FiInstagram,
-    href: "https://instagram.com/",
+    href: "https://instagram.com/ray_the_tech_guy",
     color:
       "hover:bg-gradient-to-br hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF]",
     textColor: "group-hover:text-white",
@@ -79,7 +79,7 @@ const socialLinks = [
         ♪
       </span>
     ),
-    href: "https://tiktok.com/",
+    href: "https://tiktok.com/@ray_coding",
     color: "hover:bg-black",
     textColor: "group-hover:text-white",
     tooltip: "bg-black",
@@ -94,7 +94,7 @@ const socialLinks = [
         ▶
       </span>
     ),
-    href: "https://youtube.com/",
+    href: "https://youtube.com/@ray_thetechguy",
     color: "hover:bg-[#FF0000]",
     textColor: "group-hover:text-white",
     tooltip: "bg-[#FF0000]",
@@ -109,7 +109,7 @@ const socialLinks = [
         Be
       </span>
     ),
-    href: "https://behance.net/",
+    href: "https://behance.net/alkhotuwiyy",
     color: "hover:bg-[#1769FF]",
     textColor: "group-hover:text-white",
     tooltip: "bg-[#1769FF]",
@@ -826,7 +826,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="/Rokeeb-A-Yusuff-CV.pdf"
+                href="/developer-cv.pdf"
                 download
                 className="
                   group

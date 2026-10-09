@@ -140,12 +140,12 @@ const profiles = {
         icon: FiLayers,
       },
       {
-        number: "15+",
+        number: "7+",
         label: "Clients",
         icon: FiUsers,
       },
       {
-        number: "3+",
+        number: "2+",
         label: "Years Experience",
         icon: FiClock,
       },
@@ -836,16 +836,6 @@ export default function About() {
                       "
                     />
                   </motion.a>
-
-                  <span
-                    className="
-                      text-sm
-                      text-slate-500
-                      dark:text-slate-500
-                    "
-                  >
-                    Available for new projects
-                  </span>
                 </motion.div>
               </motion.div>
             </AnimatePresence>
